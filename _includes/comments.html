@@ -64,3 +64,23 @@ gitment.render('container')
 </script>
 <!-- end -->
 {% endif %}
+
+{% if site.gitalk_shortname %}
+<div id="container"></div>
+<link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+<script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script>
+var gitalk = new Gitalk({
+  distractionFreeMode: true,  // 是否添加全屏遮罩
+  id: '<%= page.date %>',    // 页面的唯一标识，
+  owner: 'wency1121',
+  repo: 'comments',    //存储你评论 issue 的 Github 仓库名
+  oauth: {
+    client_id: 'bf6b71cc33e802203f78',// GitHub Application Client ID
+    client_secret: '3735445a4b3acb4c08383666cfecc0266b972ae9', // GitHub Application Client Secret
+  },
+})
+gitalk.render('container')
+</script>
+<!-- end -->
+{% endif %}
