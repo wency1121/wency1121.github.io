@@ -17,7 +17,7 @@ type: page
 
 * GitHub：[wency1121](https://github.com/wency1121)
 * email：wangx0775@gmail.com
-* [知乎](https://www.zhihu.com/people/gaohaoyang)
+* [知乎](https://www.zhihu.com/people/wency-43)
 
 ## 友情链接
 
