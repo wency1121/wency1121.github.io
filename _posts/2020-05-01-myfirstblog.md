@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "第一篇博客"
-categories: 诗
+categories: 随笔
 tags: 春
 author: Wency
 ---
