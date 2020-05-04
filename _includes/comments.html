@@ -65,12 +65,12 @@ gitment.render('container')
 <!-- end -->
 {% endif %}
 
-{% if site.gitalk_shortname %}
+<!-- {% if site.gitalk_shortname %}
 <div id="container"></div>
 <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
 <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
 <script>
-var gitalk = new Gitalk({
+const gitalk = new Gitalk({
   distractionFreeMode: true,  // 是否添加全屏遮罩
   id: '<%= page.date %>',    // 页面的唯一标识，
   admin: ['wency1121'],
@@ -85,5 +85,23 @@ window.onhashchange = function (event) {
   }
 }
 </script>
-<!-- end -->
+<-- end -->
+<!-- {% endif %} -->
+
+<!-- Gitalk 评论 start  -->
+{% if site.gitalk_shortname %}
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
+<div id="gitalk-container"></div>     <script type="text/javascript">
+  var gitalk = new Gitalk({
+    id: '<%= page.date %>',    // 页面的唯一标识，
+    admin: ['wency1121'],
+    owner: 'wency1121',
+    repo: 'comments',    //存储你评论 issue 的 Github 仓库名
+    clientID: 'bf6b71cc33e802203f78',// GitHub Application Client ID
+    clientSecret:  '3735445a4b3acb4c08383666cfecc0266b972ae9', // GitHub 
+  });
+gitalk.render('gitalk-container');
+</script>
 {% endif %}
+<!-- Gitalk end -->
