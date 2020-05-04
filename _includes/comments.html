@@ -66,13 +66,13 @@ gitment.render('container')
 {% endif %}
 
 {% if site.gitalk_shortname %}
-<!-- <div  ="container"></div> -->
+<div  ="container"></div>
 <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
 <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
 <script>
 const gitalk = new Gitalk({
   distractionFreeMode: true,  // 是否添加全屏遮罩
-  id: window.location.pathname,    // 页面的唯一标识，
+  id: '<%= page.date %>',    // 页面的唯一标识，
   admin: ['wency1121'],
   owner: 'wency1121',
   repo: 'comments',    //存储你评论 issue 的 Github 仓库名
