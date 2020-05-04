@@ -22,6 +22,6 @@ type: page
 
 [羡辙杂俎](http://zhangwenli.com/blog) \| [Anotherhome](https://www.anotherhome.net) 
 
-## Comments
+<!-- ## Comments
 
-{% include comments.html %}
+{% include comments.html %} -->
