@@ -18,3 +18,7 @@ author: Wency
 蝉虫也没有鸣叫
 只剩下隆隆的雨声
 伴我入眠
+
+## Comments
+
+{% include comments.html %}
