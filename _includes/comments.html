@@ -94,6 +94,7 @@ window.onhashchange = function (event) {
 <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
 <div id="gitalk-container"></div>     <script type="text/javascript">
   var gitalk = new Gitalk({
+    distractionFreeMode: true,
     id: '<%= page.date %>',    // 页面的唯一标识，
     admin: ['wency1121'],
     owner: 'wency1121',

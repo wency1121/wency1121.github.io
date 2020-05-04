@@ -9,7 +9,6 @@ type: page
 * content
 {:toc}
 
-## 关于我
 
 目前就读于大气物理研究所。
 
